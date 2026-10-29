@@ -1,0 +1,429 @@
+
+.ykr-branches {
+  width: 100%;
+  padding: 85px 6%;
+  background: #f5f8fc;
+}
+
+.ykr-branches-container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.ykr-branches-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 45px;
+  margin-bottom: 40px;
+}
+
+.ykr-branches-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+  color: #16427e;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.8px;
+}
+
+.ykr-branches-eyebrow::before {
+  content: "";
+  width: 24px;
+  height: 2px;
+  background: #f19b23;
+}
+
+.ykr-branches-heading h2 {
+  max-width: 660px;
+  margin: 0;
+  color: #102b50;
+  font-size: clamp(30px, 3.3vw, 46px);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -1.3px;
+}
+
+.ykr-branches-heading h2 span {
+  color: #f19b23;
+}
+
+.ykr-branches-heading > p {
+  max-width: 340px;
+  margin: 0;
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.85;
+}
+
+.ykr-branches-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.ykr-branch-card {
+  min-width: 0;
+  min-height: 235px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border: 1px solid #e2e9f3;
+  border-radius: 12px;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.ykr-branch-card:hover {
+  transform: translateY(-5px);
+  border-color: #c0d1e7;
+  box-shadow: 0 15px 35px rgba(16, 43, 80, 0.07);
+}
+
+.ykr-branch-headquarters {
+  background: #123b73;
+  border-color: #123b73;
+}
+
+.ykr-branch-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.ykr-branch-icon {
+  width: 47px;
+  height: 47px;
+  display: grid;
+  place-items: center;
+  background: #edf3fa;
+  border-radius: 11px;
+  color: #16427e;
+}
+
+.ykr-branch-number {
+  color: #a3b0c1;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.ykr-branch-hq-label {
+  align-self: flex-start;
+  margin-bottom: 9px;
+  padding: 5px 9px;
+  color: #f4ad4b;
+  background: rgba(244, 173, 75, 0.12);
+  border-radius: 4px;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+}
+
+.ykr-branch-info {
+  flex: 1;
+}
+
+.ykr-branch-info h3 {
+  margin: 0 0 7px;
+  color: #102b50;
+  font-size: 21px;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.ykr-branch-area {
+  margin: 0;
+  color: #64748b;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.ykr-branch-address {
+  margin: 12px 0 0;
+  color: #64748b;
+  font-size: 12px;
+  line-height: 1.75;
+}
+
+.ykr-branch-directions {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  align-self: flex-start;
+  margin-top: 24px;
+  padding-top: 13px;
+  border-top: 1px solid #e5eaf2;
+  color: #16427e;
+  font-size: 12px;
+  font-weight: 800;
+  text-decoration: none;
+  transition: gap 0.25s ease;
+}
+
+.ykr-branch-directions:hover {
+  gap: 13px;
+}
+
+.ykr-branch-directions svg:last-child {
+  margin-left: 8px;
+}
+
+.ykr-branch-headquarters .ykr-branch-icon {
+  color: #f4ad4b;
+  background: rgba(244, 173, 75, 0.13);
+}
+
+.ykr-branch-headquarters .ykr-branch-number,
+.ykr-branch-headquarters .ykr-branch-area,
+.ykr-branch-headquarters .ykr-branch-address {
+  color: #c4d4e9;
+}
+
+.ykr-branch-headquarters .ykr-branch-info h3 {
+  color: #ffffff;
+}
+
+.ykr-branch-headquarters .ykr-branch-directions {
+  color: #f4ad4b;
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+/* Bottom CTA */
+
+.ykr-branches-contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  margin-top: 30px;
+  padding: 25px 28px;
+  background: #ffffff;
+  border: 1px solid #e2e9f3;
+  border-radius: 12px;
+}
+
+.ykr-branches-contact-left {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+
+.ykr-branches-contact-icon {
+  width: 49px;
+  height: 49px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  color: #16427e;
+  background: #edf3fa;
+  border-radius: 11px;
+}
+
+.ykr-branches-contact-left h3 {
+  margin: 0 0 6px;
+  color: #102b50;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.ykr-branches-contact-left p {
+  margin: 0;
+  color: #64748b;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.ykr-branches-contact-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-shrink: 0;
+  padding: 14px 18px;
+  color: #ffffff;
+  background: #16427e;
+  border-radius: 7px;
+  font-size: 12px;
+  font-weight: 800;
+  text-decoration: none;
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+.ykr-branches-contact-btn:hover {
+  background: #0d2c58;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 1000px) {
+  .ykr-branches-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .ykr-branches-contact {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 700px) {
+  .ykr-branches {
+    padding: 60px 20px;
+  }
+
+  .ykr-branches-heading {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+
+  .ykr-branches-heading h2 {
+    font-size: 32px;
+  }
+
+  .ykr-branches-heading > p {
+    font-size: 14px;
+  }
+
+  .ykr-branches-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .ykr-branch-card {
+    min-height: 210px;
+    padding: 23px;
+  }
+
+  .ykr-branch-top {
+    margin-bottom: 18px;
+  }
+
+  .ykr-branches-contact {
+    padding: 22px;
+  }
+
+  .ykr-branches-contact-left {
+    align-items: flex-start;
+  }
+
+  .ykr-branches-contact-left h3 {
+    font-size: 15px;
+  }
+
+  .ykr-branches-contact-btn {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ykr-branch-card,
+  .ykr-branch-directions,
+  .ykr-branches-contact-btn {
+    transition: none;
+  }
+}
+
+
+/* ======================================
+   TALWADE BRANCH GOOGLE MAP
+====================================== */
+
+.ykr-branch-map {
+  width: 100%;
+  margin-top: 18px;
+  margin-bottom: 18px;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: #e8eef6;
+}
+
+.ykr-branch-map iframe {
+  display: block;
+  width: 100%;
+  height: 190px;
+  border: none;
+}
+
+/* Ensure the map fits within the HQ card */
+
+.ykr-branch-headquarters {
+  min-width: 0;
+}
+
+@media (max-width: 700px) {
+  .ykr-branch-map {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .ykr-branch-map iframe {
+    height: 210px;
+  }
+}
+
+/* ==========================================
+   BRANCH CARDS - INDEPENDENT HEIGHT
+========================================== */
+
+/* Each card maintains its own height */
+.ykr-branches-grid {
+  align-items: start;
+}
+
+/* Cards with maps grow according to content */
+.ykr-branch-has-map {
+  height: auto;
+}
+
+/* Cards without maps remain compact */
+.ykr-branch-no-map {
+  height: auto;
+  min-height: 235px;
+}
+
+/* Prevent info from unnecessarily stretching */
+.ykr-branch-no-map .ykr-branch-info {
+  flex: 0 0 auto;
+}
+
+/* Keep map sizing consistent */
+.ykr-branch-map {
+  width: 100%;
+  margin-top: 18px;
+  margin-bottom: 18px;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #e8eef6;
+  border: 1px solid #e2e9f3;
+}
+
+.ykr-branch-map iframe {
+  display: block;
+  width: 100%;
+  height: 190px;
+  border: none;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 700px) {
+  .ykr-branch-no-map {
+    min-height: 210px;
+  }
+
+  .ykr-branch-map iframe {
+    height: 210px;
+  }
+}

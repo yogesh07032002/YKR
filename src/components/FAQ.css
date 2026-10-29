@@ -1,0 +1,258 @@
+
+.ykr-faq {
+  width: 100%;
+  padding: 85px 6%;
+  background: #ffffff;
+}
+
+.ykr-faq-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 0.75fr 1.25fr;
+  align-items: start;
+  gap: 85px;
+}
+
+.ykr-faq-intro {
+  min-width: 0;
+}
+
+.ykr-faq-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+  color: #16427e;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.ykr-faq-eyebrow::before {
+  content: "";
+  width: 24px;
+  height: 2px;
+  background: #f19b23;
+}
+
+.ykr-faq-intro h2 {
+  margin: 0 0 20px;
+  color: #102b50;
+  font-size: clamp(30px, 3.3vw, 46px);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -1.4px;
+}
+
+.ykr-faq-intro h2 span {
+  color: #f19b23;
+}
+
+.ykr-faq-intro > p {
+  max-width: 380px;
+  margin: 0;
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+/* Help Card */
+
+.ykr-faq-help {
+  margin-top: 35px;
+  padding: 27px;
+  background: #f5f8fc;
+  border: 1px solid #e5eaf2;
+  border-radius: 12px;
+}
+
+.ykr-faq-help-icon {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 20px;
+  color: #16427e;
+  background: #e5edf8;
+  border-radius: 11px;
+}
+
+.ykr-faq-help h3 {
+  margin: 0 0 10px;
+  color: #102b50;
+  font-size: 19px;
+  font-weight: 800;
+}
+
+.ykr-faq-help p {
+  margin: 0 0 20px;
+  color: #64748b;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.ykr-faq-help a {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: #16427e;
+  font-size: 13px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.ykr-faq-help a:hover {
+  color: #e99520;
+}
+
+/* Accordion */
+
+.ykr-faq-list {
+  min-width: 0;
+  border-top: 1px solid #e5eaf2;
+}
+
+.ykr-faq-item {
+  border-bottom: 1px solid #e5eaf2;
+}
+
+.ykr-faq-question-heading {
+  margin: 0;
+}
+
+.ykr-faq-question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  padding: 22px 0;
+  border: none;
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.ykr-faq-question-number {
+  flex-shrink: 0;
+  color: #e6a24b;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.ykr-faq-question-text {
+  flex: 1;
+  color: #102b50;
+  font-size: 16px;
+  font-weight: 750;
+  line-height: 1.55;
+  transition: color 0.25s ease;
+}
+
+.ykr-faq-toggle {
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  color: #16427e;
+  background: #edf3fa;
+  border-radius: 50%;
+  transition:
+    background 0.25s ease,
+    color 0.25s ease;
+}
+
+.ykr-faq-item-active .ykr-faq-question-text {
+  color: #16427e;
+}
+
+.ykr-faq-item-active .ykr-faq-toggle {
+  background: #16427e;
+  color: #ffffff;
+}
+
+.ykr-faq-question:hover .ykr-faq-question-text {
+  color: #e99520;
+}
+
+.ykr-faq-question:focus-visible {
+  outline: 2px solid #16427e;
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+.ykr-faq-answer-wrapper {
+  padding: 0 50px 22px 34px;
+}
+
+.ykr-faq-answer-wrapper[hidden] {
+  display: none;
+}
+
+.ykr-faq-answer-wrapper p {
+  margin: 0;
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.85;
+}
+
+@media (max-width: 1000px) {
+  .ykr-faq-container {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 700px) {
+  .ykr-faq {
+    padding: 60px 20px;
+  }
+
+  .ykr-faq-container {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .ykr-faq-intro h2 {
+    font-size: 32px;
+  }
+
+  .ykr-faq-intro > p {
+    font-size: 14px;
+  }
+
+  .ykr-faq-help {
+    margin-top: 25px;
+    padding: 22px;
+  }
+
+  .ykr-faq-question {
+    gap: 11px;
+    padding: 19px 0;
+  }
+
+  .ykr-faq-question-text {
+    font-size: 14px;
+  }
+
+  .ykr-faq-toggle {
+    width: 29px;
+    height: 29px;
+  }
+
+  .ykr-faq-answer-wrapper {
+    padding: 0 35px 20px 27px;
+  }
+
+  .ykr-faq-answer-wrapper p {
+    font-size: 13px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ykr-faq-question-text,
+  .ykr-faq-toggle {
+    transition: none;
+  }
+}

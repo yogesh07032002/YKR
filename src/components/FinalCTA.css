@@ -1,0 +1,469 @@
+
+/* ==========================================
+   YKR FINAL CTA SECTION
+========================================== */
+
+.ykr-final-cta {
+  position: relative;
+  width: 100%;
+  padding: 70px 6%;
+  background: #0c2345;
+  overflow: hidden;
+  font-family: "Inter", Arial, sans-serif;
+}
+
+.ykr-final-cta-container {
+  position: relative;
+  z-index: 2;
+  max-width: 1300px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  align-items: center;
+  gap: 80px;
+}
+
+/* ==========================================
+   LEFT CONTENT
+========================================== */
+
+.ykr-final-cta-content {
+  min-width: 0;
+}
+
+.ykr-final-cta-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+  color: #f4ad4b;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.7px;
+}
+
+.ykr-final-cta-label::before {
+  content: "";
+  width: 25px;
+  height: 2px;
+  background: #f4ad4b;
+}
+
+.ykr-final-cta-content h2 {
+  max-width: 660px;
+  margin: 0 0 18px;
+  color: #ffffff;
+  font-size: clamp(33px, 3.6vw, 49px);
+  font-weight: 800;
+  line-height: 1.18;
+  letter-spacing: -1.5px;
+}
+
+.ykr-final-cta-content h2 span {
+  color: #f4ad4b;
+}
+
+.ykr-final-cta-content > p {
+  max-width: 570px;
+  margin: 0;
+  color: #b9c9de;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+/* ==========================================
+   BENEFITS
+========================================== */
+
+.ykr-final-cta-benefits {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  margin-top: 25px;
+}
+
+.ykr-final-cta-benefits span {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #e0e9f5;
+  font-size: 12px;
+  font-weight: 650;
+}
+
+.ykr-final-cta-benefits svg {
+  color: #f4ad4b;
+  flex-shrink: 0;
+}
+
+/* ==========================================
+   RIGHT ACTION PANEL
+========================================== */
+
+.ykr-final-cta-actions {
+  min-width: 0;
+  padding: 28px;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 14px;
+}
+
+.ykr-final-cta-action-heading {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  margin-bottom: 23px;
+  color: #ffffff;
+}
+
+.ykr-final-cta-action-heading svg {
+  color: #f4ad4b;
+  flex-shrink: 0;
+}
+
+.ykr-final-cta-action-heading span {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.1px;
+}
+
+/* ==========================================
+   WHATSAPP BUTTON
+========================================== */
+
+.ykr-final-cta-primary {
+  width: 100%;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  padding: 13px 15px;
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: 800;
+  text-decoration: none;
+  text-align: center;
+  background: #f4ad4b;
+  color: #102b50;
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+.ykr-final-cta-primary:hover {
+  background: #ffc36f;
+  transform: translateY(-2px);
+}
+
+/* ==========================================
+   CONTACT NUMBERS
+========================================== */
+
+.ykr-final-cta-secondary {
+  width: 100%;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+  padding: 13px 15px;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 7px;
+  font-family: "Inter", Arial, sans-serif;
+  transition: background 0.25s ease;
+}
+
+.ykr-final-cta-secondary:hover {
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.ykr-final-cta-secondary > svg {
+  flex-shrink: 0;
+  color: #f4ad4b;
+}
+
+.ykr-final-cta-secondary a {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 0.25s ease;
+}
+
+.ykr-final-cta-secondary a:hover {
+  color: #f4ad4b;
+}
+
+.ykr-final-cta-divider {
+  color: #f4ad4b;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* ==========================================
+   SOCIAL MEDIA SECTION
+========================================== */
+
+.ykr-final-cta-social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  margin-top: 23px;
+  padding-top: 21px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.ykr-final-cta-social-label {
+  color: #b9c9de;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.ykr-final-cta-social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+/* COMMON SOCIAL ICON */
+
+.ykr-social-icon {
+  width: 45px;
+  height: 45px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 11px;
+  color: #ffffff;
+  text-decoration: none;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.ykr-social-icon svg {
+  display: block;
+}
+
+.ykr-social-icon:hover {
+  transform: translateY(-4px);
+}
+
+/* INSTAGRAM ORIGINAL GRADIENT */
+
+.ykr-social-icon.instagram {
+  background: linear-gradient(
+    45deg,
+    #feda75 0%,
+    #fa7e1e 22%,
+    #d62976 48%,
+    #962fbf 75%,
+    #4f5bd5 100%
+  );
+}
+
+.ykr-social-icon.instagram:hover {
+  box-shadow: 0 8px 20px rgba(214, 41, 118, 0.3);
+}
+
+/* YOUTUBE RED */
+
+.ykr-social-icon.youtube {
+  background: #ff0000;
+}
+
+.ykr-social-icon.youtube:hover {
+  box-shadow: 0 8px 20px rgba(255, 0, 0, 0.3);
+}
+
+/* FACEBOOK BLUE */
+
+.ykr-social-icon.facebook {
+  background: #1877f2;
+}
+
+.ykr-social-icon.facebook:hover {
+  box-shadow: 0 8px 20px rgba(24, 119, 242, 0.3);
+}
+
+/* ==========================================
+   BRANCH AND BATCH INFO
+========================================== */
+
+.ykr-final-cta-note {
+  margin: 22px 0 0;
+  color: #b9c9de;
+  font-size: 11px;
+  line-height: 1.7;
+  text-align: center;
+}
+
+.ykr-final-cta-note span {
+  color: #f4ad4b;
+}
+
+/* ==========================================
+   BACKGROUND DECORATION
+========================================== */
+
+.ykr-final-cta-decoration {
+  position: absolute;
+  right: -170px;
+  bottom: -310px;
+  width: 550px;
+  height: 550px;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.ykr-final-cta-decoration::before,
+.ykr-final-cta-decoration::after {
+  content: "";
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 50%;
+}
+
+.ykr-final-cta-decoration::before {
+  inset: 60px;
+}
+
+.ykr-final-cta-decoration::after {
+  inset: 120px;
+}
+
+/* ==========================================
+   TABLET RESPONSIVE
+========================================== */
+
+@media (max-width: 1000px) {
+  .ykr-final-cta-container {
+    gap: 40px;
+  }
+
+  .ykr-final-cta-content h2 {
+    font-size: 38px;
+  }
+}
+
+/* ==========================================
+   MOBILE RESPONSIVE
+========================================== */
+
+@media (max-width: 700px) {
+  .ykr-final-cta {
+    padding: 55px 20px;
+  }
+
+  .ykr-final-cta-container {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .ykr-final-cta-content h2 {
+    font-size: 34px;
+  }
+
+  .ykr-final-cta-content > p {
+    font-size: 14px;
+  }
+
+  .ykr-final-cta-benefits {
+    gap: 12px 17px;
+  }
+
+  .ykr-final-cta-benefits span {
+    font-size: 11px;
+  }
+
+  .ykr-final-cta-actions {
+    padding: 22px;
+  }
+
+  .ykr-final-cta-primary {
+    font-size: 12px;
+  }
+
+  .ykr-final-cta-secondary {
+    gap: 7px;
+    padding: 13px 8px;
+  }
+
+  .ykr-final-cta-secondary a {
+    font-size: 12px;
+  }
+
+  .ykr-final-cta-divider {
+    font-size: 13px;
+  }
+
+  .ykr-final-cta-social {
+    margin-top: 20px;
+    padding-top: 19px;
+  }
+
+  .ykr-final-cta-social-links {
+    gap: 12px;
+  }
+
+  .ykr-social-icon {
+    width: 43px;
+    height: 43px;
+    border-radius: 10px;
+  }
+
+  .ykr-social-icon svg {
+    width: 19px;
+    height: 19px;
+  }
+
+  .ykr-final-cta-decoration {
+    width: 350px;
+    height: 350px;
+    right: -200px;
+    bottom: -200px;
+  }
+}
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width: 380px) {
+  .ykr-final-cta-secondary {
+    gap: 5px;
+  }
+
+  .ykr-final-cta-secondary a {
+    font-size: 11px;
+  }
+
+  .ykr-final-cta-content h2 {
+    font-size: 31px;
+  }
+}
+
+/* ==========================================
+   REDUCED MOTION
+========================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .ykr-final-cta-primary,
+  .ykr-final-cta-secondary,
+  .ykr-final-cta-secondary a,
+  .ykr-social-icon {
+    transition: none;
+  }
+}

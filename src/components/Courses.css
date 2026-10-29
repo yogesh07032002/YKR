@@ -1,0 +1,430 @@
+
+/* ==========================================
+   COURSES SECTION
+========================================== */
+
+.ykr-courses {
+  width: 100%;
+  padding: 85px 6%;
+  background: #f5f8fc;
+  font-family: "Inter", Arial, sans-serif;
+}
+
+.ykr-courses-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* ==========================================
+   SECTION HEADING
+========================================== */
+
+.ykr-courses-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 42px;
+}
+
+.ykr-courses-heading > div {
+  max-width: 720px;
+}
+
+.ykr-courses-eyebrow {
+  display: inline-block;
+  margin-bottom: 16px;
+  color: #16427e;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.8px;
+}
+
+.ykr-courses-heading h2 {
+  margin: 0;
+  color: #102b50;
+  font-size: clamp(30px, 3.3vw, 46px);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -1.3px;
+}
+
+.ykr-courses-heading h2 span {
+  color: #f19b23;
+}
+
+.ykr-courses-heading > p {
+  max-width: 380px;
+  margin: 0;
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* ==========================================
+   FOUR COLUMN GRID
+========================================== */
+
+.ykr-courses-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+  align-items: stretch;
+}
+
+/* ==========================================
+   COURSE CARD
+========================================== */
+
+.ykr-course-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 100%;
+  padding: 0;
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid #e2e9f3;
+  border-radius: 13px;
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.ykr-course-card:hover {
+  transform: translateY(-5px);
+  border-color: #b9cce6;
+  box-shadow: 0 16px 35px rgba(16, 43, 80, 0.09);
+}
+
+/* ==========================================
+   COURSE IMAGE
+========================================== */
+
+.ykr-course-image {
+  position: relative;
+  width: 100%;
+  height: 190px;
+  min-height: 190px;
+  flex-shrink: 0;
+  overflow: hidden;
+  background: #e8eef6;
+}
+
+.ykr-course-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 25%;
+  transition: transform 0.45s ease;
+}
+.ykr-course-card:hover .ykr-course-image img {
+  transform: scale(1.06);
+}
+
+/* IMAGE NUMBER */
+
+.ykr-course-image-number {
+  position: absolute;
+  top: 13px;
+  left: 13px;
+  z-index: 2;
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  background: #ffffff;
+  color: #16427e;
+  border-radius: 7px;
+  font-size: 12px;
+  font-weight: 800;
+  box-shadow: 0 4px 12px rgba(16, 43, 80, 0.1);
+}
+
+/* ==========================================
+   COURSE CONTENT
+========================================== */
+
+.ykr-course-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+  min-width: 0;
+  padding: 23px 20px 21px;
+}
+
+/* HIGHLIGHT */
+
+.ykr-course-highlight {
+  display: block;
+  margin-bottom: 11px;
+  color: #e99a2d;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.7px;
+  line-height: 1.5;
+}
+
+/* COURSE TITLE */
+
+.ykr-course-content h3 {
+  margin: 0 0 12px;
+  color: #102b50;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.4;
+  letter-spacing: -0.35px;
+}
+
+/* DESCRIPTION */
+
+.ykr-course-description {
+  flex: 1;
+  margin: 0 0 22px;
+  color: #64748b;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+/* ==========================================
+   ENQUIRE BUTTON
+========================================== */
+
+.ykr-course-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  margin-top: auto;
+  padding: 11px 16px;
+  color: #ffffff;
+  background: #16427e;
+  border-radius: 7px;
+  font-size: 12px;
+  font-weight: 800;
+  text-decoration: none;
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+.ykr-course-link:hover {
+  background: #0d2c58;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* ==========================================
+   BOTTOM CTA
+========================================== */
+
+.ykr-courses-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  margin-top: 30px;
+  padding: 24px 28px;
+  background: #ffffff;
+  border: 1px solid #e2e9f3;
+  border-radius: 12px;
+}
+
+.ykr-courses-bottom p {
+  margin: 0;
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.ykr-courses-bottom p strong {
+  color: #102b50;
+  font-weight: 800;
+}
+
+.ykr-courses-bottom a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-shrink: 0;
+  padding: 14px 19px;
+  background: #16427e;
+  color: #ffffff;
+  border-radius: 7px;
+  font-size: 12px;
+  font-weight: 800;
+  text-decoration: none;
+  transition: background 0.25s ease;
+}
+
+.ykr-courses-bottom a:hover {
+  background: #0d2c58;
+  color: #ffffff;
+}
+
+/* ==========================================
+   SMALL DESKTOP
+========================================== */
+
+@media (max-width: 1200px) {
+  .ykr-courses {
+    padding: 75px 5%;
+  }
+
+  .ykr-courses-grid {
+    gap: 15px;
+  }
+
+  .ykr-course-image {
+    height: 170px;
+    min-height: 170px;
+  }
+
+  .ykr-course-content {
+    padding: 19px 16px;
+  }
+
+  .ykr-course-content h3 {
+    font-size: 16px;
+  }
+
+  .ykr-course-description {
+    font-size: 12px;
+  }
+}
+
+/* ==========================================
+   TABLET - TWO CARDS
+========================================== */
+
+@media (max-width: 900px) {
+  .ykr-courses-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  .ykr-course-image {
+    height: 210px;
+    min-height: 210px;
+  }
+
+  .ykr-course-content {
+    padding: 22px;
+  }
+
+  .ykr-course-content h3 {
+    font-size: 19px;
+  }
+
+  .ykr-course-description {
+    font-size: 13px;
+  }
+
+  .ykr-courses-heading {
+    gap: 25px;
+  }
+}
+
+/* ==========================================
+   MOBILE - ONE CARD
+========================================== */
+
+@media (max-width: 700px) {
+  .ykr-courses {
+    padding: 60px 20px;
+  }
+
+  .ykr-courses-heading {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 30px;
+  }
+
+  .ykr-courses-heading h2 {
+    font-size: 32px;
+  }
+
+  .ykr-courses-heading > p {
+    max-width: 100%;
+    font-size: 14px;
+  }
+
+  .ykr-courses-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .ykr-course-image {
+    height: 220px;
+    min-height: 220px;
+  }
+
+  .ykr-course-content {
+    padding: 23px 21px;
+  }
+
+  .ykr-course-content h3 {
+    font-size: 20px;
+  }
+
+  .ykr-course-description {
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+
+  .ykr-course-link {
+    padding: 12px 17px;
+  }
+
+  .ykr-courses-bottom {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 18px;
+    padding: 23px;
+  }
+
+  .ykr-courses-bottom p {
+    font-size: 13px;
+  }
+
+  .ykr-courses-bottom a {
+    width: 100%;
+  }
+}
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width: 380px) {
+  .ykr-courses {
+    padding: 55px 15px;
+  }
+
+  .ykr-course-image {
+    height: 190px;
+    min-height: 190px;
+  }
+
+  .ykr-course-content h3 {
+    font-size: 18px;
+  }
+}
+
+/* ==========================================
+   REDUCED MOTION
+========================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .ykr-course-card,
+  .ykr-course-image img,
+  .ykr-course-link {
+    transition: none;
+  }
+}

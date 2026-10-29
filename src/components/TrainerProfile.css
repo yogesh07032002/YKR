@@ -1,0 +1,407 @@
+
+/* ==========================================
+   TRAINER PROFILE SECTION
+========================================== */
+
+.ykr-trainer {
+  width: 100%;
+  padding: 90px 6%;
+  background: #ffffff;
+  overflow: hidden;
+  font-family: "Inter", Arial, sans-serif;
+}
+
+/* MAIN CONTAINER */
+
+.ykr-trainer-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  align-items: center;
+  gap: 65px;
+}
+
+/* ==========================================
+   TRAINER IMAGE
+========================================== */
+
+.ykr-trainer-visual {
+  position: relative;
+  min-width: 0;
+  padding: 0 20px 25px 0;
+}
+
+.ykr-trainer-photo {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  overflow: hidden;
+  background: #edf3fa;
+  border-radius: 15px;
+}
+
+.ykr-trainer-photo img {
+  display: block;
+  width: 100%;
+  height: 580px;
+  object-fit: cover;
+  object-position: center top;
+  transition: transform 0.5s ease;
+}
+
+.ykr-trainer-photo:hover img {
+  transform: scale(1.035);
+}
+
+/* ORANGE BACKGROUND ACCENT */
+
+.ykr-trainer-photo-accent {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  bottom: 0;
+  width: 70%;
+  height: 70%;
+  background: #f4ad4b;
+  border-radius: 15px;
+}
+
+/* ==========================================
+   EXPERIENCE BADGE
+========================================== */
+
+.ykr-trainer-experience {
+  position: absolute;
+  z-index: 3;
+  right: -10px;
+  bottom: 55px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 18px 22px;
+  background: #ffffff;
+  border: 1px solid #e8edf4;
+  border-radius: 11px;
+  box-shadow: 0 14px 35px rgba(16, 43, 80, 0.12);
+}
+
+.ykr-trainer-experience svg {
+  color: #e99a2d;
+  flex-shrink: 0;
+}
+
+.ykr-trainer-experience div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.ykr-trainer-experience strong {
+  color: #102b50;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.ykr-trainer-experience span {
+  color: #64748b;
+  font-size: 12px;
+}
+
+/* ==========================================
+   TRAINER CONTENT
+========================================== */
+
+.ykr-trainer-content {
+  min-width: 0;
+}
+
+/* EYEBROW */
+
+.ykr-trainer-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+  color: #16427e;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.8px;
+}
+
+.ykr-trainer-eyebrow::before {
+  content: "";
+  width: 25px;
+  height: 2px;
+  background: #f19b23;
+}
+
+/* MAIN HEADING */
+
+.ykr-trainer-content h2 {
+  margin: 0 0 25px;
+  color: #102b50;
+  font-size: clamp(32px, 3.4vw, 47px);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -1.4px;
+}
+
+.ykr-trainer-content h2 span {
+  color: #f19b23;
+}
+
+/* TRAINER IDENTITY */
+
+.ykr-trainer-identity {
+  margin-bottom: 20px;
+}
+
+.ykr-trainer-identity h3 {
+  margin: 0 0 6px;
+  color: #16427e;
+  font-size: 23px;
+  font-weight: 800;
+}
+
+.ykr-trainer-identity p {
+  margin: 0;
+  color: #7a8798;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* DESCRIPTION */
+
+.ykr-trainer-description {
+  margin: 0 0 14px;
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.ykr-trainer-description strong {
+  color: #16427e;
+  font-weight: 700;
+}
+
+/* DIVIDER */
+
+.ykr-trainer-divider {
+  height: 1px;
+  margin: 25px 0 22px;
+  background: #e5eaf2;
+}
+
+/* ==========================================
+   TRAINING SPECIALIZATIONS
+========================================== */
+
+.ykr-trainer-specialization-title {
+  margin: 0 0 17px;
+  color: #102b50;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.ykr-trainer-specializations {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 15px 20px;
+}
+
+.ykr-trainer-specialization {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #334c6b;
+  font-size: 13px;
+  font-weight: 650;
+}
+
+.ykr-trainer-specialization svg {
+  flex-shrink: 0;
+  color: #e99a2d;
+}
+
+/* ==========================================
+   CLOSING TEXT
+========================================== */
+
+.ykr-trainer-closing {
+  margin: 25px 0 0;
+  color: #334c6b;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.8;
+}
+
+/* ==========================================
+   CONNECT BUTTON
+========================================== */
+
+.ykr-trainer-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+  padding: 15px 23px;
+  background: #16427e;
+  border-radius: 7px;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 800;
+  text-decoration: none;
+  text-align: center;
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+.ykr-trainer-btn:hover {
+  background: #0c2d58;
+  transform: translateY(-3px);
+}
+
+/* ==========================================
+   TABLET RESPONSIVE
+========================================== */
+
+@media (max-width: 1000px) {
+  .ykr-trainer {
+    padding: 75px 5%;
+  }
+
+  .ykr-trainer-container {
+    grid-template-columns: 1fr 1.1fr;
+    gap: 40px;
+  }
+
+  .ykr-trainer-photo img {
+    height: 500px;
+  }
+
+  .ykr-trainer-experience {
+    right: -5px;
+    padding: 15px 17px;
+  }
+
+  .ykr-trainer-content h2 {
+    font-size: 35px;
+  }
+}
+
+/* ==========================================
+   MOBILE RESPONSIVE
+========================================== */
+
+@media (max-width: 700px) {
+  .ykr-trainer {
+    padding: 60px 20px;
+  }
+
+  .ykr-trainer-container {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .ykr-trainer-visual {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding-right: 15px;
+    padding-bottom: 15px;
+  }
+
+  .ykr-trainer-photo img {
+    height: 440px;
+    object-position: center top;
+  }
+
+  .ykr-trainer-experience {
+    right: 0;
+    bottom: 35px;
+    gap: 10px;
+    padding: 13px 15px;
+  }
+
+  .ykr-trainer-experience strong {
+    font-size: 19px;
+  }
+
+  .ykr-trainer-experience span {
+    font-size: 11px;
+  }
+
+  .ykr-trainer-content h2 {
+    font-size: 33px;
+    line-height: 1.2;
+  }
+
+  .ykr-trainer-identity h3 {
+    font-size: 21px;
+  }
+
+  .ykr-trainer-description {
+    font-size: 14px;
+    line-height: 1.85;
+  }
+
+  .ykr-trainer-specializations {
+    gap: 14px 12px;
+  }
+
+  .ykr-trainer-specialization {
+    font-size: 12px;
+  }
+
+  .ykr-trainer-closing {
+    font-size: 13px;
+    line-height: 1.8;
+  }
+
+  .ykr-trainer-btn {
+    width: 100%;
+    padding: 15px 18px;
+    font-size: 12px;
+  }
+}
+
+/* ==========================================
+   SMALL MOBILE RESPONSIVE
+========================================== */
+
+@media (max-width: 380px) {
+  .ykr-trainer-photo img {
+    height: 380px;
+  }
+
+  .ykr-trainer-specializations {
+    grid-template-columns: 1fr;
+  }
+
+  .ykr-trainer-experience {
+    padding: 11px 12px;
+  }
+
+  .ykr-trainer-experience strong {
+    font-size: 17px;
+  }
+
+  .ykr-trainer-content h2 {
+    font-size: 30px;
+  }
+}
+
+/* ==========================================
+   REDUCED MOTION
+========================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .ykr-trainer-photo img,
+  .ykr-trainer-btn {
+    transition: none;
+  }
+}
